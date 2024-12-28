@@ -21,9 +21,11 @@ Here i implement naive k-means clustering and a version with parallelization. I 
 - sklearn.datasets
 
 Also the code should be implemented on GPU.
+
 3. Parallelization is performed by GPU acceleration with PyTorch to speed up the k-means clustering algorithm, instead of CPU. Also optimized version utilizes torch for tensor operations instead of numpy arrays, matrix operations and broadcasting to calculate distances efficiently instead of nested loops, matrix multiplication and division to update cluster centers efficiently intead of nested loops. 
 
-4. ![image](https://github.com/user-attachments/assets/03fe563f-eec1-47c1-a430-93c22c1cd01a)
+4.
+    ![image](https://github.com/user-attachments/assets/03fe563f-eec1-47c1-a430-93c22c1cd01a)
 
 Here we can see that after using parallelization the time lowered a lot, specifically in 904 times. Naive algorithm took 9.79 sec per iteration, while updated algorithm took 0.01 sec per iteration.
 
